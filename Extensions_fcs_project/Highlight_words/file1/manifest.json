@@ -1,0 +1,18 @@
+{
+  "name": "hiding all the words",
+  "manifest_version": 2,
+  "version": "1.0",
+  "web_accessible_resources": [
+     "*.webp"
+  ],
+  "content_scripts":[
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
